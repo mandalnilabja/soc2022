@@ -1,6 +1,5 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template
-import pickle
 import pandas as pd
 import tensorflow as tf
 from sklearn.preprocessing import StandardScaler
