@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>CNNpred Deployment</title>
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>CNNpred NIFTY50 Predictor</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('pipeline')}}" method="post" enctype="multipart/form-data">
+        
+        <input type="file" name="data">
+        <input type="submit" value="Predict" name="submit">
+    
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
